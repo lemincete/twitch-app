@@ -1,0 +1,31 @@
+.root {
+    display: flex;
+    justify-content: space-between;
+    &__input {
+        padding: 10px 12px;
+        box-shadow: inset 0 0 0 1px hsla(240, 8%, 88%, 0.4);
+        border-radius: 5px 0 0 5px;
+        color: #fff;
+        background: var(--bg-color);
+
+        min-width: 300px;
+        &::placeholder {
+            color: #d1d0d0;
+            font-size: 14.5px;
+        }
+        &:focus {
+            box-shadow:
+                0 0 0 2px #a970ff,
+                inset 0 0 0 2px #a970ff;
+        }
+    }
+    &__search {
+        border-radius: 0 5px 5px 0;
+        padding: 0 7px;
+        background: rgba(83, 83, 95, 0.38);
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
