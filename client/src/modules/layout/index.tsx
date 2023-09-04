@@ -1,8 +1,8 @@
 import { FC, ReactNode } from 'react';
 import styles from './index.module.scss';
 
-import Header from "./header";
-import Footer from "./footer";
+import Header from './components/header';
+
 
 interface LayoutProps {
     children: ReactNode
@@ -17,7 +17,6 @@ const Layout: FC<LayoutProps> = ({ children }) => {
                     {children}
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

@@ -1,0 +1,11 @@
+.root {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 5px;
+    background: #a970ff;
+    span {
+        font-size: 15px;
+        color: #fff;
+    }
+}

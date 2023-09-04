@@ -1,4 +1,4 @@
-import { TAppDispatch, TRootState } from "./index.type";
+import { TAppDispatch, TRootState } from "../types";
 
 import { useSelector, TypedUseSelectorHook, useDispatch } from "react-redux";
 

@@ -1,10 +1,10 @@
 import styles from './index.module.scss';
 
-import Logo from './images/logo.svg';
-import Avatar from './images/avatar.svg';
+import Logo from '../../images/logo.svg'
+import Avatar from '../../images/avatar.svg';
 
 import { Link } from 'react-router-dom';
-import HeaderSearchInput from '../../ui/header-search-input/HeaderSearchInput';
+import HeaderSearchInput from '../header-search-input/HeaderSearchInput';
 
 
 const Header = () => {
