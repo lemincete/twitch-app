@@ -13,7 +13,7 @@ interface StreamsProps {
 
 const Streams: FC<StreamsProps> = ({ isHomePage }) => {
 
-    const { data, isLoading, isError } = useFetchActiveStreams(isHomePage ? '8' : '0');
+    const { data, isLoading, isError } = useFetchActiveStreams(isHomePage ? '12' : '0');
 
 
     if (isLoading) {
@@ -26,9 +26,9 @@ const Streams: FC<StreamsProps> = ({ isHomePage }) => {
 
 
     return (
-        <div className={styles.root}>
+        <section className={styles.root}>
             {data.map(item => <StreamsItem {...item} key={item.id} />)}
-        </div>
+        </section>
     );
 }
 

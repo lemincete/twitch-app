@@ -27,6 +27,11 @@ const StreamsItem: FC<IStream> = ({ title, thumbnail_url, game_name, user_id, vi
                         <h3 >{title}</h3>
                     </Link>
                     <p className={styles.root__info__stream__nickname}>{user_login}</p>
+                    <div className={styles.root__info__stream__tags}>
+                        {tags.map(tag =>
+                            <span className={styles.root__info__stream__tags__item} key={tag}>{tag}</span>
+                        )}
+                    </div>
                 </div>
             </div>
         </article>

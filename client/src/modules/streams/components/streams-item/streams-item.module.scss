@@ -53,8 +53,28 @@
         &__stream {
             &__title {
                 color: #fff;
+                display: inline-block;
+                margin-bottom: 5px;
                 &:hover {
                     color: #a970ff;
+                }
+            }
+            &__nickname {
+                color: #adadb8;
+                font-size: 13px;
+            }
+            &__tags {
+                display: flex;
+                column-gap: 7px;
+                margin-top: 10px;
+                &__item {
+                    display: block;
+                    font-size: 13px;
+                    font-weight: 600;
+                    background: rgba(83, 83, 95, 0.38);
+                    padding: 4px 8px;
+                    color: #adadb8;
+                    border-radius: 20px;
                 }
             }
         }
