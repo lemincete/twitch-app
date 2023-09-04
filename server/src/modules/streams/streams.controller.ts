@@ -3,12 +3,14 @@ import { Request, Response, NextFunction } from "express";
 import StreamsService from "./streams.service";
 
 class StreamsController {
-    getActiveStreams(req: Request, res: Response, next: NextFunction) {
+    async getActiveStreams(req: Request, res: Response, next: NextFunction) {
         try {
 
             const { first } = req.query as { first: string }
 
-            StreamsService.getStreams(first);
+            const streams = await StreamsService.getStreams(first);
+
+            return res.json(streams);
 
         } catch (e) {
             console.log(e);

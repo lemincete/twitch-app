@@ -14,7 +14,11 @@ body {
     --bg-color: #111;
 }
 
+body {
+    color: var(--content-color);
+}
+
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }

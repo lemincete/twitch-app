@@ -8,7 +8,7 @@ const Navigation = () => {
     return (
         <nav className={styles.root}>
             {navigationItemsArr.map((item) =>
-                <NavigationItem {...item} />
+                <NavigationItem {...item} key={item.path} />
             )}
         </nav>
     );

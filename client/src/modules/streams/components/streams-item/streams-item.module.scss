@@ -1,0 +1,62 @@
+.root {
+    flex: 0 1 24%;
+    &__body {
+        background: #a970ff;
+        margin-bottom: 10px;
+        &__live {
+            border-radius: 3px;
+            background: red;
+            padding: 3px;
+            position: absolute;
+            display: block;
+            top: 10px;
+            left: 10px;
+            z-index: 5;
+        }
+        &__image {
+            transition: all 0.3s ease;
+            &:hover {
+                transform: translate(5px, -5px);
+            }
+            position: relative;
+            padding-bottom: 190px;
+            img {
+                z-index: 2;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__viewers {
+            padding: 3px;
+            position: absolute;
+            display: block;
+            background: rgba(0, 0, 0, 0.6);
+            bottom: 10px;
+            left: 10px;
+            z-index: 5;
+        }
+    }
+    &__info {
+        display: flex;
+        column-gap: 10px;
+        &__avatar {
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+        &__stream {
+            &__title {
+                color: #fff;
+                &:hover {
+                    color: #a970ff;
+                }
+            }
+        }
+    }
+}
